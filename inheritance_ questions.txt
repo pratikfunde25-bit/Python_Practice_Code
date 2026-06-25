@@ -1,0 +1,53 @@
+1. Method Resolution Order (MRO) Confusion
+
+Q: If a child class overrides a method of the parent class, can you still access the parent class version without using super()? If yes, how?
+Hint: You can directly call Parent.method(self) — explore consequences.
+
+2. Instance Attribute Shadowing
+
+Q: If both parent and child classes define the same instance variable in __init__, which one will be used when accessed from an object of the child class?
+Follow-up: What happens if you delete the attribute in the child using del self.attr?
+
+3. Static and Class Methods Inheritance
+
+Q: Can a child class override a @staticmethod or @classmethod? What happens if both parent and child define a method with the same name but different decorators?
+
+4. Constructor Overriding Without Calling Parent
+
+Q: What happens if the child class defines an __init__() method but does not call the parent's __init__()? What issues can arise?
+
+5. Dynamic Attribute Assignment
+
+Q: Can you dynamically add a method to a parent class after a child class has already inherited from it? Will the child class see the new method?
+
+6. Multiple Objects, Shared Parent
+
+Q: If two child class instances inherit from the same parent class, do they share the parent’s instance variables?
+
+7. Accessing Private Variables
+
+Q: If the parent class defines a private variable using __var, can the child class access it in any way?
+Follow-up: Is name mangling bypassable?
+
+8. Overriding __str__ and __repr__
+
+Q: What happens when only the parent class has __str__ or __repr__ methods and the child doesn’t? What gets printed when print(obj) is called on a child instance?
+
+9. Method Overriding with Different Signatures
+
+Q: What happens if the parent method takes two parameters and the child overrides it with only one? Will Python raise an error?
+
+10. Calling Child Method From Parent
+
+Q: Is it possible for a method in the parent class to call a method that is defined in the child class?
+
+Follow-up: What happens when you instantiate the parent class instead?
+
+Bonus:
+11. Class vs Instance Variables in Inheritance
+
+Q: What’s the behavior when a parent class has a class variable and the child changes it? Does it affect the parent’s class variable?
+
+🧠 Pro Tip:
+
+To really challenge your teacher, frame these as code-based puzzles. For example:
