@@ -1,0 +1,12 @@
+ERROR:root:ZeroDivisionError occurred
+Traceback (most recent call last):
+  File "c:\Users\Pratik\Desktop\Python Coding Prabhu Sir Class\Python day one 1\Exception_error_handling.py", line 122, in <module>
+    1 / 0
+    ~~^~~
+ZeroDivisionError: division by zero
+ERROR:root:ZeroDivisionError occurred
+Traceback (most recent call last):
+  File "c:\Users\Pratik\Desktop\Python Coding Prabhu Sir Class\Python day one 1\Exception_error_handling.py", line 122, in <module>
+    1 / 0
+    ~~^~~
+ZeroDivisionError: division by zero

@@ -1,0 +1,13 @@
+// Composition vs Aggregation vs Inheritance
+digraph {
+	Car [label=Car]
+	Engine [label=Engine]
+	Team [label=Team]
+	Player [label=Player]
+	Vehicle [label=Vehicle]
+	Car -> Vehicle [label="IS-A" arrowhead=empty]
+	Car -> Engine [label="HAS-A
+(Composition)" arrowhead=diamond]
+	Team -> Player [label="HAS-A
+(Aggregation)" arrowhead=odiamond]
+}
